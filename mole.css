@@ -2,6 +2,37 @@ body {
   zoom: 0.75;
 }
 
+.gh {
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "score game-complete moles-left";
+    height: 75px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.score {
+    display: flex;
+    margin-left: 30px;
+    align-self: center;
+    flex-wrap: nowrap;
+}
+
+.game-complete {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.moles-left {
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+    flex-wrap: nowrap;
+    margin-right: 30px;
+}
+
 .wgs {
     height: 241px;
     position: relative;
@@ -16,7 +47,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.wgs__mole-head:not(.wgs__mole-head--whacked) {
+.wgs__mole-head {
     position: absolute;
     width: 188px;
     left: 55px;
@@ -35,7 +66,4 @@ body {
 .wgs__mole-head--hidden {
     margin-top: 241px;
     overflow: hidden;
-}
-
-.wgs__mole-head--whacked {
 }
