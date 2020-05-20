@@ -1,1 +1,41 @@
-/* Write your CSS here. */
+body {
+  zoom: 0.75;
+}
+
+.wgs {
+    height: 241px;
+    position: relative;
+    width: 320px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.pf {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.wgs__mole-head:not(.wgs__mole-head--whacked) {
+    position: absolute;
+    width: 188px;
+    left: 55px;
+    right: 78px;
+    transition: 0.25s;
+}
+
+.wgs__dirt-pile {
+    height: 110px;
+    position: absolute;
+    width: 320px;
+    bottom: 0;
+    top: 131px;
+}
+
+.wgs__mole-head--hidden {
+    margin-top: 241px;
+    overflow: hidden;
+}
+
+.wgs__mole-head--whacked {
+}
